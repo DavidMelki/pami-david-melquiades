@@ -1,95 +1,44 @@
-# Crie um projeto em Expo✔️
+# Criando um Projeto Expo com React Native
 
-**Expo** é uma ferramenta que facilita a criação de aplicativos React Native, eliminando a necessidade de configurar ambientes complicados como Android Studio ou Xcode. Com Expo, é possível iniciar um projeto com poucos comandos e testá-lo diretamente no celular.
+# Requisitos do sistema:
 
------------
+Antes de começar, certifique-se de ter instalado:
+- ⚙️ [Node.js (LTS)](https://nodejs.org/en/)- 💻 Sistema Operacional compatível: **macOS**, **Windows** (com PowerShell e [WSL 2](https://expo.fyi/wsl)) ou **Linux**
 
-### 💠Pré-requisitos
+# Criando o projeto:
+Abra o **terminal** (no Windows, use o **PowerShell**) e execute o seguinte comando:
 
-Antes de começar, é necessário ter instalado:
+`npx create-expo-app@latest`
 
--   **Node.js** (recomenda-se a versão LTS)
-    
--   **npm** ou **yarn**
-    
--   **Expo CLI** (instalado via npm)
-    
--   Um celular com o aplicativo **Expo Go** (disponível na Play Store e App Store)
+# Renomeando o projeto:
+Durante o processo, você verá essa pergunta:
 
-----
+`What is your app named? » my-app`
 
-### 📚Passo a Passo
+Aqui você pode definir o nome do seu projeto como quiser.
 
-#### 1. Instale o Expo CLI
+# Executando o aplicativo:
+1°- Acesse a pasta do projeto com:
 
-Abra o terminal e digite:
+`cd nome-do-seu-projeto`
 
-    npm install -g expo-cli
---------
-#### 🔨2. Crie o Projeto
+2°- Escolha onde deseja rodar seu app:
 
-Depois da instalação, crie um novo projeto com o seguinte comando:
+ -npm run android   # Para emulador Android
+ -npm run ios # Para emulador iOS (apenas em macOS)
+ -npm run web       # Para rodar no navegador
+ 
+ # Estrutura do Projeto
+ 
+ Depois de criado, você verá uma estrutura básica como esta:
 
-    npx create-expo-exemplo-app
+📦 my-app
+┣ 📁 node_modules
+┣ 📁 assets
+┣ 📁 app
+┣ 📄 App.js
+┣ 📄 package.json
+┗ 📄 README.md
 
--------
-3.  **📋Escolha um template**
-    
-
-Ao executar o comando acima, o Expo CLI perguntará qual template você deseja usar. Você pode escolher entre:
-
--   **blank** — projeto básico, sem extras
-    
--   **blank (TypeScript)** — projeto básico com suporte a TypeScript
-    
--   **tabs (TypeScript)** — projeto com navegação em abas, usando TypeScript
-    
--   E outros templates que podem estar disponíveis.
-
-Escolha o que for melhor para o seu uso.
-
-
-----
-
-4.  **📂Entre na pasta do projeto**
-    
-
-Após o projeto ser criado, entre na pasta:
-
-    cd exemplo-app
-----
-5.  **🔑Inicie o projeto**
-    
-
-Execute o servidor de desenvolvimento com:
-
-    expo start
-
-Isso abrirá o Expo Developer Tools no navegador, de onde você pode rodar seu app em um emulador ou dispositivo físico.
-
-----
-
-6. **📲Testar o aplicativo no dispositivo**
-
--   No celular, abra o app **Expo Go**.
-    
--   Use o leitor de QR Code para escanear o código exibido no terminal ou no navegador.
-    
--   O app será carregado no celular, e toda modificação no código será atualizada automaticamente.
-------
-7.  📡Compartilhar seu App
-
-Você pode compartilhar o app com outras pessoas via QR code, ou publicar com:
-
-    npx expo export
-
---------
-## 🌐 Links úteis
-
--   [Documentação oficial do Expo](https://docs.expo.dev/get-started/introduction/)
-    
--   [Documentação do React Native](https://reactnative.dev)
-
------
-
-## ✅Pronto!  Agora você tem um projeto em Expo!
+# Pronto!
+Agora você tem seu ambiente configurado e pode começar a desenvolver seu app com React Native + Expo!
